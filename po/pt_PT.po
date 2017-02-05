@@ -4,13 +4,13 @@
 # This file is distributed under the same license as the Git package.
 # Contributors:
 # - Marco Sousa <marcomsousa AT gmail.com>
-# Vasco Almeida <vascomalmeida@sapo.pt>, 2016.
+# Vasco Almeida <vascomalmeida@sapo.pt>, 2016, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2017-02-04 13:02+0800\n"
-"PO-Revision-Date: 2016-11-25 22:58+0800\n"
+"PO-Revision-Date: 2017-02-05 19:07+0000\n"
 "Last-Translator: Vasco Almeida <vascomalmeida@sapo.pt>\n"
 "Language-Team: Portuguese\n"
 "Language: pt\n"
@@ -899,7 +899,7 @@ msgstr ""
 "Significa que o primeiro commit '%s' está entre %s e [%s].\n"
 
 #: bisect.c:750
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Some %s revs are not ancestors of the %s rev.\n"
 "git bisect cannot work properly in this case.\n"
@@ -1315,9 +1315,9 @@ msgid "invalid mode for object creation: %s"
 msgstr "modo inválido para criação de objeto: %s"
 
 #: config.c:1149
-#, fuzzy, c-format
+#, c-format
 msgid "bad pack compression level %d"
-msgstr "nível de compactação do pacote"
+msgstr "nível de compactação do pacote %d incorreto"
 
 #: config.c:1339
 msgid "unable to parse command-line config"
@@ -1344,9 +1344,9 @@ msgid "%s has multiple values"
 msgstr "%s tem múltiplos valores"
 
 #: config.c:2225 config.c:2450
-#, fuzzy, c-format
+#, c-format
 msgid "fstat on %s failed"
-msgstr "falha ao ler %s"
+msgstr "falha de fstat de %s"
 
 #: config.c:2343
 #, c-format
@@ -1578,12 +1578,11 @@ msgid "Untracked cache is disabled on this system or location."
 msgstr "A cache não controlada está desativada neste sistema ou localização."
 
 #: dir.c:2760
-#, fuzzy, c-format
+#, c-format
 msgid "could not migrate git directory from '%s' to '%s'"
-msgstr "não foi possível criar o diretório de '%s'"
+msgstr "não foi possível migrar o diretório git de '%s' para '%s'"
 
 #: fetch-pack.c:213
-#, fuzzy
 msgid "git fetch-pack: expected shallow list"
 msgstr "git fetch-pack: esperava-se lista rasa"
 
@@ -1601,12 +1600,12 @@ msgid "--stateless-rpc requires multi_ack_detailed"
 msgstr "--stateless-rpc requer multi_ack_detailed"
 
 #: fetch-pack.c:381
-#, fuzzy, c-format
+#, c-format
 msgid "invalid shallow line: %s"
 msgstr "linha rasa inválida: %s"
 
 #: fetch-pack.c:387
-#, fuzzy, c-format
+#, c-format
 msgid "invalid unshallow line: %s"
 msgstr "linha para aprofundar inválida: %s"
 
@@ -1621,12 +1620,12 @@ msgid "error in object: %s"
 msgstr "erro no objeto: %s"
 
 #: fetch-pack.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "no shallow found: %s"
 msgstr "raso não encontrado: %s"
 
 #: fetch-pack.c:397
-#, fuzzy, c-format
+#, c-format
 msgid "expected shallow/unshallow, got %s"
 msgstr "esperava-se raso/aprofundar, obteve-se %s"
 
@@ -2276,7 +2275,7 @@ msgstr "%s: '%s' está fora do repositório"
 #: pathspec.c:451
 #, c-format
 msgid "'%s' (mnemonic: '%c')"
-msgstr ""
+msgstr "'%s' (mnemónica: '%c')"
 
 #: pathspec.c:461
 #, c-format
@@ -2373,9 +2372,9 @@ msgid "%%(subject) does not take arguments"
 msgstr "%%(subject) não leva argumentos"
 
 #: ref-filter.c:92
-#, fuzzy, c-format
+#, c-format
 msgid "%%(trailers) does not take arguments"
-msgstr "%%(body) não leva argumentos"
+msgstr "%%(trailers) não leva argumentos"
 
 #: ref-filter.c:111
 #, c-format
@@ -2667,14 +2666,13 @@ msgid "cherry-pick"
 msgstr "cherry-pick"
 
 #: sequencer.c:219
-#, fuzzy
 msgid "rebase -i"
-msgstr "commit-base"
+msgstr "rebase -i"
 
 #: sequencer.c:221
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown action: %d"
-msgstr "Tipo desconhecido: %d"
+msgstr "Ação desconhecida: %d"
 
 #: sequencer.c:278
 msgid ""
@@ -2796,6 +2794,9 @@ msgid ""
 "\n"
 "\t%.*s"
 msgstr ""
+"1ª linha inesperada da mensagem de squash:\n"
+"\n"
+"\t%.*s"
 
 #: sequencer.c:821
 #, c-format
@@ -2804,11 +2805,14 @@ msgid ""
 "\n"
 "\t%.*s"
 msgstr ""
+"1ª linha inválida da mensagem de squash:\n"
+"\n"
+"\t%.*s"
 
 #: sequencer.c:827 sequencer.c:852
-#, fuzzy, c-format
+#, c-format
 msgid "This is a combination of %d commits."
-msgstr "Isto é a combinação de 2 commits."
+msgstr "Isto é a combinação de %d commits."
 
 #: sequencer.c:836
 msgid "need a HEAD to fixup"
