@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2017-02-04 13:02+0800\n"
-"PO-Revision-Date: 2017-02-05 19:07+0000\n"
+"PO-Revision-Date: 2017-02-12 18:48+0000\n"
 "Last-Translator: Vasco Almeida <vascomalmeida@sapo.pt>\n"
 "Language-Team: Portuguese\n"
 "Language: pt\n"
@@ -3126,44 +3126,40 @@ msgid "could not update HEAD to %s"
 msgstr "não foi possível escrever para %s"
 
 #: sequencer.c:2159
-#, fuzzy
 msgid "cannot rebase: You have unstaged changes."
-msgstr "Não é possível rebasear: tem alterações não preparadas."
+msgstr "não é possível rebasear: tem alterações não preparadas."
 
 #: sequencer.c:2164
-#, fuzzy
 msgid "could not remove CHERRY_PICK_HEAD"
-msgstr "Não foi possível remover CHERRY_PICK_HEAD"
+msgstr "não foi possível remover CHERRY_PICK_HEAD"
 
 #: sequencer.c:2173
-#, fuzzy
 msgid "cannot amend non-existing commit"
-msgstr "não é possível ler o objeto existente %s"
+msgstr "não é possível emendar commit não-existente"
 
 #: sequencer.c:2175
-#, fuzzy, c-format
+#, c-format
 msgid "invalid file: '%s'"
-msgstr "chave inválida: %s"
+msgstr "ficheiro inválido: '%s'"
 
 #: sequencer.c:2177
-#, fuzzy, c-format
+#, c-format
 msgid "invalid contents: '%s'"
-msgstr "opção inválida: %s"
+msgstr "conteúdo inválido: '%s'"
 
 #: sequencer.c:2180
-#, fuzzy
 msgid ""
 "\n"
 "You have uncommitted changes in your working tree. Please, commit them\n"
 "first and then run 'git rebase --continue' again."
 msgstr ""
+"\n"
 "Tem alterações por submeter na árvore de trabalho. Submeta-as primeiro\n"
 "e execute 'git rebase --continue' de novo."
 
 #: sequencer.c:2190
-#, fuzzy
 msgid "could not commit staged changes."
-msgstr "Não foi possível submeter as alterações preparadas."
+msgstr "não foi possível submeter as alterações preparadas."
 
 #: sequencer.c:2270
 #, c-format
@@ -3363,25 +3359,27 @@ msgid "negative values not allowed for submodule.fetchJobs"
 msgstr "não é permitido valores negativos em submodule.fetchJobs"
 
 #: submodule.c:1184
-#, fuzzy, c-format
+#, c-format
 msgid "could not start 'git status in submodule '%s'"
-msgstr "não foi possível obter o diretório do submódulo de '%s'"
+msgstr "não foi possível iniciar 'git status' no submódulo '%s'"
 
 #: submodule.c:1197
-#, fuzzy, c-format
+#, c-format
 msgid "could not run 'git status in submodule '%s'"
-msgstr "não foi possível criar o ficheiro '%s'"
+msgstr "não foi possível executar 'git status' no submódulo '%s'"
 
 #: submodule.c:1398
 #, c-format
 msgid ""
 "relocate_gitdir for submodule '%s' with more than one worktree not supported"
 msgstr ""
+"relocate_gitdir para submodule '%s' com mais do que uma árvore de trabalho "
+"não suportado"
 
 #: submodule.c:1410 submodule.c:1471
-#, fuzzy, c-format
+#, c-format
 msgid "could not lookup name for submodule '%s'"
-msgstr "não foi possível abrir ou ler '%s'"
+msgstr "não foi possível procurar pelo submódulo '%s'"
 
 #: submodule.c:1414 submodule.c:1474 builtin/submodule--helper.c:640
 #: builtin/submodule--helper.c:650
@@ -3390,17 +3388,20 @@ msgid "could not create directory '%s'"
 msgstr "não foi possível criar o diretório '%s'"
 
 #: submodule.c:1420
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Migrating git directory of '%s%s' from\n"
 "'%s' to\n"
 "'%s'\n"
-msgstr "Falha ao copiar notas de '%s' para '%s'"
+msgstr ""
+"A migrar diretório git de '%s%s' de\n"
+"'%s' para\n"
+"'%s'\n"
 
 #: submodule.c:1512
-#, fuzzy, c-format
+#, c-format
 msgid "could not recurse into submodule '%s'"
-msgstr "Falha ao percorrer recursivamente o caminho de submódulo '$sm_path'"
+msgstr "não foi possível percorrer recursivamente o submódulo '%s'"
 
 #: submodule-config.c:360
 #, c-format
@@ -3593,13 +3594,13 @@ msgstr ""
 "%%s"
 
 #: unpack-trees.c:116
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Updating the following directories would lose untracked files in them:\n"
 "%s"
 msgstr ""
-"Perder-se-iam ficheiros não controlados ao atualizar os seguintes "
-"diretórios:\n"
+"Atualizar os seguintes diretórios perde os ficheiros não controlos dentro "
+"deles:\n"
 "%s"
 
 #: unpack-trees.c:120
@@ -4032,7 +4033,7 @@ msgstr "  (use \"git am --abort\" para restaurar o ramo original)"
 
 #: wt-status.c:1176
 msgid "git-rebase-todo is missing."
-msgstr ""
+msgstr "git-rebase-todo não existe."
 
 #: wt-status.c:1178
 msgid "No commands done."
@@ -4995,10 +4996,8 @@ msgid "Ignore whitespace differences"
 msgstr "Ignorar as diferenças de espaço em branco"
 
 #: builtin/blame.c:2604
-#, fuzzy
 msgid "Use an experimental heuristic to improve diffs"
-msgstr ""
-"Usar um heurística experimental baseada em indentação para melhorar diffs"
+msgstr "Usar um heurística experimental para melhorar diffs"
 
 #: builtin/blame.c:2606
 msgid "Spend extra cycles to find better match"
@@ -5420,7 +5419,7 @@ msgstr "imprimir apenas os ramos do objeto"
 
 #: builtin/branch.c:681 builtin/for-each-ref.c:46 builtin/tag.c:388
 msgid "sorting and filtering are case insensitive"
-msgstr ""
+msgstr "ordenar e filtrar são insensíveis a maiúsculas"
 
 #: builtin/branch.c:698
 msgid "Failed to resolve HEAD as a valid ref."
@@ -6101,7 +6100,7 @@ msgid "failed to remove %s"
 msgstr "falha ao remover %s"
 
 #: builtin/clean.c:291 git-add--interactive.perl:623
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Prompt help:\n"
 "1          - select a numbered item\n"
@@ -6111,10 +6110,10 @@ msgstr ""
 "Ajuda de linha de comandos:\n"
 "1          - selecionar um item numerado\n"
 "foo        - selecionar item baseado no prefixo único\n"
-"           - (vazio) não seleciona nada"
+"           - (vazio) não seleciona nada\n"
 
 #: builtin/clean.c:295 git-add--interactive.perl:632
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Prompt help:\n"
 "1          - select a single item\n"
@@ -6132,13 +6131,13 @@ msgstr ""
 "foo        - selecionar item baseado no prefixo único\n"
 "-...       - desselecionar itens especificados\n"
 "*          - escolher todos os itens\n"
-"           - (vazio) concluir seleção"
+"           - (vazio) concluir seleção\n"
 
 #: builtin/clean.c:511 git-add--interactive.perl:598
 #: git-add--interactive.perl:603
-#, fuzzy, c-format, perl-format
+#, c-format, perl-format
 msgid "Huh (%s)?\n"
-msgstr "O quê (%s)?"
+msgstr "O quê (%s)?\n"
 
 #: builtin/clean.c:653
 #, c-format
@@ -6161,9 +6160,9 @@ msgid "Remove %s [y/N]? "
 msgstr "Remover %s [y/N]? "
 
 #: builtin/clean.c:777 git-add--interactive.perl:1669
-#, fuzzy, c-format
+#, c-format
 msgid "Bye.\n"
-msgstr "Adeus."
+msgstr "Adeus.\n"
 
 #: builtin/clean.c:785
 msgid ""
@@ -6345,9 +6344,8 @@ msgid "revision"
 msgstr "revisão"
 
 #: builtin/clone.c:102 builtin/fetch.c:125
-#, fuzzy
 msgid "deepen history of shallow clone, excluding rev"
-msgstr "aprofundar o histórico de um clone raso ao excluir uma revisão"
+msgstr "aprofundar o histórico de um clone raso, excluindo a revisão"
 
 #: builtin/clone.c:104
 msgid "clone only one branch, HEAD or --branch"
@@ -7557,90 +7555,92 @@ msgid "unhandled object '%s' given."
 msgstr "objeto sem tratamento '%s' fornecido."
 
 #: builtin/difftool.c:28
-#, fuzzy
 msgid "git difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"
-msgstr "git log [<opções>] [<intervalo-de-revisões>] [[--] <caminho>...]"
+msgstr "git difftool [<opções>] [<commit> [<commit>]] [--] [<caminho>...]"
 
 #: builtin/difftool.c:241
-#, fuzzy, c-format
+#, c-format
 msgid "failed: %d"
-msgstr "falha ao aplicar o patch: %s:%ld"
+msgstr "falha: %d"
 
 #: builtin/difftool.c:342
 msgid ""
 "combined diff formats('-c' and '--cc') are not supported in\n"
 "directory diff mode('-d' and '--dir-diff')."
 msgstr ""
+"formatos diff combinado('-c' e '--cc') não são suportados em\n"
+"modo diff diretório ('-d' e '--dir-diff')."
 
 #: builtin/difftool.c:567
 #, c-format
 msgid "both files modified: '%s' and '%s'."
-msgstr ""
+msgstr "ambos os ficheiros modificados: '%s' e '%s'."
 
 #: builtin/difftool.c:569
-#, fuzzy
 msgid "working tree file has been left."
-msgstr "a árvore de trabalho '%s' já existe."
+msgstr "ficheiro de árvore de trabalho foi deixado."
 
 #: builtin/difftool.c:580
 #, c-format
 msgid "temporary files exist in '%s'."
-msgstr ""
+msgstr "existem ficheiros temporários em '%s'."
 
 #: builtin/difftool.c:581
 msgid "you may want to cleanup or recover these."
-msgstr ""
+msgstr "pode querer limpar ou recuperá-los."
 
 #: builtin/difftool.c:626
 msgid "use `diff.guitool` instead of `diff.tool`"
-msgstr ""
+msgstr "use 'diff.guitool' em vez de 'diff.tool'"
 
 #: builtin/difftool.c:628
 msgid "perform a full-directory diff"
-msgstr ""
+msgstr "efetuar diff diretório completo"
 
 #: builtin/difftool.c:630
 msgid "do not prompt before launching a diff tool"
-msgstr ""
+msgstr "não perguntar antes de lançar uma ferramenta diff"
 
 #: builtin/difftool.c:636
 msgid "use symlinks in dir-diff mode"
-msgstr ""
+msgstr "usar symlinks no modi dir-diff"
 
 #: builtin/difftool.c:637
 msgid "<tool>"
-msgstr ""
+msgstr "<ferramenta>"
 
 #: builtin/difftool.c:638
 msgid "use the specified diff tool"
-msgstr ""
+msgstr "usar a ferramenta diff especificada"
 
 #: builtin/difftool.c:640
 msgid "print a list of diff tools that may be used with `--tool`"
 msgstr ""
+"imprimir uma lista de ferramentas diff que podem ser usadas com '--tool'"
 
 #: builtin/difftool.c:643
 msgid ""
 "make 'git-difftool' exit when an invoked diff tool returns a non - zero exit "
 "code"
 msgstr ""
+"fazer com que 'git-difftool' termine quando uma ferramenta diff invocada "
+"retorna um código de saída não nulo"
 
 #: builtin/difftool.c:645
-#, fuzzy
 msgid "<command>"
-msgstr "comando"
+msgstr "<comando>"
 
 #: builtin/difftool.c:646
 msgid "specify a custom command for viewing diffs"
-msgstr ""
+msgstr "especificar um comando personalizado para ver diffs"
 
 #: builtin/difftool.c:670
 msgid "no <tool> given for --tool=<tool>"
-msgstr ""
+msgstr "nenhuma <ferramenta> dada a --tool=<ferramenta>"
 
 #: builtin/difftool.c:677
 msgid "no <cmd> given for --extcmd=<cmd>"
-msgstr ""
+msgstr "nenhum <cmd> dado a --extcmd=<cmd>"
 
 #: builtin/fast-export.c:25
 msgid "git fast-export [rev-list-opts]"
@@ -8241,19 +8241,16 @@ msgid "ignore files specified via '.gitignore'"
 msgstr "ignorar ficheiros especificados via '.gitignore'"
 
 #: builtin/grep.c:981
-#, fuzzy
 msgid "recursivley search in each submodule"
-msgstr "controlar a obtenção recursiva de submódulos"
+msgstr "procurar recursivamente em cada submódulo"
 
 #: builtin/grep.c:983
-#, fuzzy
 msgid "basename"
-msgstr "mudar nome"
+msgstr "nomebase"
 
 #: builtin/grep.c:984
-#, fuzzy
 msgid "prepend parent project's basename to output"
-msgstr "preceder isto ao caminho do submódulo"
+msgstr "preceder o nomebase do projeto pai na saída"
 
 #: builtin/grep.c:987
 msgid "show non-matching lines"
@@ -8430,7 +8427,7 @@ msgstr "--open-files-in-pager só funciona na árvore de trabalho"
 
 #: builtin/grep.c:1238
 msgid "option not supported with --recurse-submodules."
-msgstr ""
+msgstr "opção não suportada com --recurse-submodules."
 
 #: builtin/grep.c:1244
 msgid "--cached or --untracked cannot be used with --no-index."
@@ -8903,9 +8900,8 @@ msgid "--fix-thin cannot be used without --stdin"
 msgstr "--fix-thin não pode ser usado sem --stdin"
 
 #: builtin/index-pack.c:1736
-#, fuzzy
 msgid "--stdin requires a git repository"
-msgstr "--index fora de um repositório"
+msgstr "--stdin requer um repositório git"
 
 #: builtin/index-pack.c:1744
 msgid "--verify with no packfile name given"
@@ -9594,9 +9590,8 @@ msgid "git merge --abort"
 msgstr "git merge --abort"
 
 #: builtin/merge.c:49
-#, fuzzy
 msgid "git merge --continue"
-msgstr "git merge --abort"
+msgstr "git merge --continue"
 
 #: builtin/merge.c:104
 msgid "switch `m' requires a value"
@@ -9685,9 +9680,8 @@ msgid "abort the current in-progress merge"
 msgstr "abortar integração em curso"
 
 #: builtin/merge.c:229
-#, fuzzy
 msgid "continue the current in-progress merge"
-msgstr "abortar integração em curso"
+msgstr "continuar a integração em curso"
 
 #: builtin/merge.c:231 builtin/pull.c:170
 msgid "allow merging unrelated histories"
@@ -9834,9 +9828,8 @@ msgid "not something we can merge"
 msgstr "não se pode integrar"
 
 #: builtin/merge.c:1167
-#, fuzzy
 msgid "--abort expects no arguments"
-msgstr "%%(body) não leva argumentos"
+msgstr "--abort não leva argumentos"
 
 #: builtin/merge.c:1171
 msgid "There is no merge to abort (MERGE_HEAD missing)."
@@ -9844,12 +9837,11 @@ msgstr "Não há nenhuma integração para se abortar (MERGE_HEAD não presente)
 
 #: builtin/merge.c:1183
 msgid "--continue expects no arguments"
-msgstr ""
+msgstr "--continue não leva argumentos"
 
 #: builtin/merge.c:1187
-#, fuzzy
 msgid "There is no merge in progress (MERGE_HEAD missing)."
-msgstr "Não há nenhuma integração para se abortar (MERGE_HEAD não presente)."
+msgstr "Não há nenhuma integração em curso (MERGE_HEAD não presente)."
 
 #: builtin/merge.c:1203
 msgid ""
@@ -11438,7 +11430,6 @@ msgid "git receive-pack <git-dir>"
 msgstr "git receive-pack <git-dir>"
 
 #: builtin/receive-pack.c:793
-#, fuzzy
 msgid ""
 "By default, updating the current branch in a non-bare repository\n"
 "is denied, because it will make the index and work tree inconsistent\n"
@@ -12521,9 +12512,9 @@ msgid "git rm: unable to remove %s"
 msgstr "git rm: não é possível remover %s"
 
 #: builtin/rm.c:370
-#, fuzzy, c-format
+#, c-format
 msgid "could not remove '%s'"
-msgstr "não foi possível resolver a referência %s"
+msgstr "não foi possível remover '%s'"
 
 #: builtin/send-pack.c:18
 msgid ""
@@ -12561,7 +12552,7 @@ msgstr ""
 
 #: builtin/shortlog.c:249
 msgid "Group by committer rather than author"
-msgstr ""
+msgstr "agrupar por committer em vez de autor"
 
 #: builtin/shortlog.c:251
 msgid "sort output according to the number of commits per author"
@@ -12988,23 +12979,21 @@ msgstr ""
 "mas o superprojeto não está em nenhum ramo"
 
 #: builtin/submodule--helper.c:1106
-#, fuzzy
 msgid "recurse into submodules"
 msgstr "percorrer submódulos recursivamente"
 
 #: builtin/submodule--helper.c:1112
-#, fuzzy
 msgid "git submodule--helper embed-git-dir [<path>...]"
-msgstr "git submodule--helper init [<caminho>]"
+msgstr "git submodule--helper embed-git-dir [<caminho>...]"
 
 #: builtin/submodule--helper.c:1157
 msgid "submodule--helper subcommand must be called with a subcommand"
 msgstr "o subcomando submodule--helper deve ser invocado com um subcomando"
 
 #: builtin/submodule--helper.c:1164
-#, fuzzy, c-format
+#, c-format
 msgid "%s doesn't support --super-prefix"
-msgstr "O servidor não suporta --deepen"
+msgstr "%s não suporta --super-prefix"
 
 #: builtin/submodule--helper.c:1170
 #, c-format
@@ -13061,9 +13050,8 @@ msgstr ""
 "\t\t[--format=<formato>] [--[no-]merged [<commit>]] [<padrão>...]"
 
 #: builtin/tag.c:27
-#, fuzzy
 msgid "git tag -v [--format=<format>] <tagname>..."
-msgstr "git tag -v <nome-da-tag>..."
+msgstr "git tag -v [--format=<formato>] <nometag>..."
 
 #: builtin/tag.c:82
 #, c-format
@@ -13526,9 +13514,8 @@ msgid "show statistics only"
 msgstr "mostrar apenas estatísticas"
 
 #: builtin/verify-tag.c:18
-#, fuzzy
 msgid "git verify-tag [-v | --verbose] [--format=<format>] <tag>..."
-msgstr "git verify-tag [-v | --verbose] <tag>..."
+msgstr "git verify-tag [-v | --verbose] [--format=<formato>] <tag>..."
 
 #: builtin/verify-tag.c:36
 msgid "print tag contents"
@@ -13728,7 +13715,7 @@ msgstr ""
 #: remote-curl.c:319
 #, c-format
 msgid "redirecting to %s"
-msgstr ""
+msgstr "a redirecionar para %s "
 
 #: common-cmds.h:9
 msgid "start a working area (see also: git help tutorial)"
@@ -14409,9 +14396,9 @@ msgid "'$sm_path' already exists in the index"
 msgstr "'$sm_path' já existe no índice"
 
 #: git-submodule.sh:213
-#, fuzzy, sh-format
+#, sh-format
 msgid "'$sm_path' already exists in the index and is not a submodule"
-msgstr "'$sm_path' já existe no índice"
+msgstr "'$sm_path' já existe no índicee não é um submódulo"
 
 #: git-submodule.sh:218
 #, sh-format
@@ -15129,126 +15116,133 @@ msgstr "Não é possível determinar o caminho absoluto do diretório git"
 #: git-add--interactive.perl:238
 #, perl-format
 msgid "%12s %12s %s"
-msgstr ""
+msgstr "%12s %12s %s"
 
 #: git-add--interactive.perl:239
 msgid "staged"
-msgstr ""
+msgstr "preparado"
 
 #: git-add--interactive.perl:239
 msgid "unstaged"
-msgstr ""
+msgstr "não preparado"
 
 #: git-add--interactive.perl:297 git-add--interactive.perl:322
 msgid "binary"
-msgstr ""
+msgstr "binário"
 
 #: git-add--interactive.perl:306 git-add--interactive.perl:360
 msgid "nothing"
-msgstr ""
+msgstr "nada"
 
 #: git-add--interactive.perl:342 git-add--interactive.perl:357
-#, fuzzy
 msgid "unchanged"
-msgstr "Sem alterações"
+msgstr "não alterado"
 
 #: git-add--interactive.perl:653
-#, fuzzy, perl-format
+#, perl-format
 msgid "added %d path\n"
 msgid_plural "added %d paths\n"
-msgstr[0] "adicionado por eles:"
-msgstr[1] "adicionado por eles:"
+msgstr[0] "%d caminho adicionar\n"
+msgstr[1] "%d caminhos adicionados\n"
 
 #: git-add--interactive.perl:656
 #, perl-format
 msgid "updated %d path\n"
 msgid_plural "updated %d paths\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d caminho atualizado\n"
+msgstr[1] "%d caminhos atualizados\n"
 
 #: git-add--interactive.perl:659
 #, perl-format
 msgid "reverted %d path\n"
 msgid_plural "reverted %d paths\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d caminho revertido\n"
+msgstr[1] "%d caminhos revertidos\n"
 
 #: git-add--interactive.perl:662
 #, perl-format
 msgid "touched %d path\n"
 msgid_plural "touched %d paths\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d caminho afetado\n"
+msgstr[1] "%d caminhos afetados\n"
 
 #: git-add--interactive.perl:671
-#, fuzzy
 msgid "Update"
-msgstr "data"
+msgstr "Atualizar"
 
 #: git-add--interactive.perl:683
-#, fuzzy
 msgid "Revert"
-msgstr "reverter"
+msgstr "Reverter"
 
 #: git-add--interactive.perl:706
 #, perl-format
 msgid "note: %s is untracked now.\n"
-msgstr ""
+msgstr "nota: %s é agora não controlado.\n"
 
 #: git-add--interactive.perl:717
-#, fuzzy
 msgid "Add untracked"
-msgstr " seguido"
+msgstr "Adicionar não controlados"
 
 #: git-add--interactive.perl:723
-#, fuzzy
 msgid "No untracked files.\n"
-msgstr "Ficheiros não controlados"
+msgstr "Nenhum ficheiros não controlado.\n"
 
 #: git-add--interactive.perl:1039
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for staging."
 msgstr ""
+"Se o patch se aplicar corretamente, o excerto editado será marcado\n"
+"como preparado imediatamente."
 
 #: git-add--interactive.perl:1042
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for stashing."
 msgstr ""
+"Se o patch se aplicar corretamente, o excerto editado será marcado\n"
+"como escondido imediatamente."
 
 #: git-add--interactive.perl:1045
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for unstaging."
 msgstr ""
+"Se o patch se aplicar corretamente, o excerto editado será marcado\n"
+"como não preparado imediatamente."
 
 #: git-add--interactive.perl:1048 git-add--interactive.perl:1057
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for applying."
 msgstr ""
+"Se o patch se aplicar corretamente, o excerto editado será marcado\n"
+"para ser aplicado imediatamente."
 
 #: git-add--interactive.perl:1051
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for discarding"
 msgstr ""
+"Se o patch se aplicar corretamente, o excerto editado será marcado\n"
+"para ser descartado imediatamente."
 
 #: git-add--interactive.perl:1054
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for discarding."
 msgstr ""
+"Se o patch se aplicar corretamente, o excerto editado será marcado\n"
+"para ser descartado imediatamente."
 
 #: git-add--interactive.perl:1067
-#, fuzzy, perl-format
+#, perl-format
 msgid "failed to open hunk edit file for writing: %s"
-msgstr "não foi possível abrir '%s' para escrita: %s"
+msgstr "não foi possível abrir o ficheiro de edição do excerto para escrita: %s"
 
 #: git-add--interactive.perl:1068
 msgid "Manual hunk edit mode -- see bottom for a quick guide.\n"
-msgstr ""
+msgstr "Modo de edição manual de excerto -- ver guia rápido abaixo no final.\n"
 
 #: git-add--interactive.perl:1074
 #, perl-format
@@ -15258,6 +15252,10 @@ msgid ""
 "To remove '%s' lines, delete them.\n"
 "Lines starting with %s will be removed.\n"
 msgstr ""
+"---\n"
+"Para remover linhas '%s', torne-as linhas ' ' (contexto).\n"
+"Para remover linhas '%s', elimine-as.\n"
+"Linhas começadas com %s serão removidas.\n"
 
 #. TRANSLATORS: 'it' refers to the patch mentioned in the previous messages.
 #: git-add--interactive.perl:1082
@@ -15266,6 +15264,9 @@ msgid ""
 "edit again.  If all lines of the hunk are removed, then the edit is\n"
 "aborted and the hunk is left unchanged.\n"
 msgstr ""
+"Se não se aplicar corretamente, ser-lhe-á dada oportunidade para editar\n"
+"de novo.  Se todas as linhas do excerto forem removidas, a edição é\n"
+"abortada e o exceto é deixado inalterado.\n"
 
 #: git-add--interactive.perl:1096
 #, fuzzy, perl-format
