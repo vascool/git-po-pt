@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2017-02-18 01:00+0800\n"
-"PO-Revision-Date: 2017-02-12 18:48+0000\n"
+"PO-Revision-Date: 2017-02-19 20:44+0000\n"
 "Last-Translator: Vasco Almeida <vascomalmeida@sapo.pt>\n"
 "Language-Team: Portuguese\n"
 "Language: pt\n"
@@ -2819,9 +2819,8 @@ msgid "need a HEAD to fixup"
 msgstr ""
 
 #: sequencer.c:838
-#, fuzzy
 msgid "could not read HEAD"
-msgstr "não foi possível destacar HEAD"
+msgstr "não foi possível ler HEAD"
 
 #: sequencer.c:840
 #, fuzzy
@@ -2829,33 +2828,33 @@ msgid "could not read HEAD's commit message"
 msgstr "não foi possível ler a mensagem de commit: %s"
 
 #: sequencer.c:846
-#, fuzzy, c-format
+#, c-format
 msgid "cannot write '%s'"
-msgstr "não é possível criar '%s'"
+msgstr "não é possível escrever '%s'"
 
 #: sequencer.c:855 git-rebase--interactive.sh:445
 msgid "This is the 1st commit message:"
 msgstr "Esta é a 1ª mensagem de commit:"
 
 #: sequencer.c:863
-#, fuzzy, c-format
+#, c-format
 msgid "could not read commit message of %s"
-msgstr "não foi possível ler a mensagem de commit: %s"
+msgstr "não foi possível ler a mensagem de commit de %s"
 
 #: sequencer.c:870
-#, fuzzy, c-format
+#, c-format
 msgid "This is the commit message #%d:"
-msgstr "Esta é a mensagem de commit nº${n}:"
+msgstr "Esta é a mensagem de commit nº%d:"
 
 #: sequencer.c:875
-#, fuzzy, c-format
+#, c-format
 msgid "The commit message #%d will be skipped:"
-msgstr "A mensagem de commit nº${n} será ignorada:"
+msgstr "A mensagem de commit #%d será ignorada:"
 
 #: sequencer.c:880
-#, fuzzy, c-format
+#, c-format
 msgid "unknown command: %d"
-msgstr "subcomando desconhecido: %s"
+msgstr "comando desconhecido: %d"
 
 #: sequencer.c:946
 msgid "your index file is unmerged."
@@ -2890,9 +2889,9 @@ msgid "%s: cannot parse parent commit %s"
 msgstr "%s: não foi possível analisar o commit pai %s"
 
 #: sequencer.c:1063 sequencer.c:1812
-#, fuzzy, c-format
+#, c-format
 msgid "could not rename '%s' to '%s'"
-msgstr "não foi possível definir '%s' como '%s'"
+msgstr "não foi possível mudar o nome de '%s' para '%s'"
 
 #: sequencer.c:1114
 #, c-format
@@ -2924,9 +2923,9 @@ msgid "invalid line %d: %.*s"
 msgstr "linha %d inválida: %.*s"
 
 #: sequencer.c:1302
-#, fuzzy, c-format
+#, c-format
 msgid "cannot '%s' without a previous commit"
-msgstr "Não é possível efetuar '$squash_style' sem um commit anterior"
+msgstr "não é possível efetuar '%s' sem um commit anterior"
 
 #: sequencer.c:1334
 #, c-format
@@ -2934,9 +2933,8 @@ msgid "could not read '%s'."
 msgstr "não foi possível ler '%s'."
 
 #: sequencer.c:1341
-#, fuzzy
 msgid "please fix this using 'git rebase --edit-todo'."
-msgstr "Corrija-o usando 'git rebase --edit-todo'."
+msgstr "corrija-o usando 'git rebase --edit-todo'."
 
 #: sequencer.c:1343
 #, c-format
@@ -3019,29 +3017,24 @@ msgid "stored pre-cherry-pick HEAD file '%s' is corrupt"
 msgstr "o ficheiro HEAD de pre-cherry-pick '%s' está corrompido"
 
 #: sequencer.c:1640
-#, fuzzy
 msgid "You seem to have moved HEAD. Not rewinding, check your HEAD!"
-msgstr ""
-"Parece que a HEAD foi movida desde a última vez que o 'am' falhou.\n"
-"Não recuando a ORIG_HEAD"
+msgstr "Parece que a HEAD se moveu. Não recuando, verifique a HEAD."
 
 #: sequencer.c:1777 sequencer.c:2049
-#, fuzzy
 msgid "cannot read HEAD"
-msgstr "Não é possível ler HEAD"
+msgstr "não é possível ler HEAD"
 
 #: sequencer.c:1817 builtin/difftool.c:574
-#, fuzzy, c-format
+#, c-format
 msgid "could not copy '%s' to '%s'"
-msgstr "não foi possível definir '%s' como '%s'"
+msgstr "não foi possível copiar '%s' para '%s'"
 
 #: sequencer.c:1833
-#, fuzzy
 msgid "could not read index"
-msgstr "Não foi possível ler o índice"
+msgstr "não foi possível ler o índice"
 
 #: sequencer.c:1838
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "execution failed: %s\n"
 "%sYou can fix the problem, and then run\n"
@@ -3049,17 +3042,18 @@ msgid ""
 "  git rebase --continue\n"
 "\n"
 msgstr ""
-"Pode corrigir o problema e executar\n"
+"a execução falhou: %s\n"
+"%sPode corrigir o problema e executar\n"
 "\n"
-"\tgit rebase --continue"
+"  git rebase --continue\n"
+"\n"
 
 #: sequencer.c:1844
-#, fuzzy
 msgid "and made changes to the index and/or the working tree\n"
-msgstr "e fez alterações ao índice e/ou à árvore de trabalho"
+msgstr "e fez alterações ao índice e/ou à árvore de trabalho\n"
 
 #: sequencer.c:1850
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "execution succeeded: %s\n"
 "but left changes to the index and/or the working tree\n"
@@ -3072,7 +3066,8 @@ msgstr ""
 "mas deixou alterações no índice e/ou na árvore de trabalho\n"
 "Submeta ou esconda as alterações e execute\n"
 "\n"
-"\tgit rebase --continue"
+"  git rebase --continue\n"
+"\n"
 
 #: sequencer.c:1905 git-rebase.sh:168
 #, c-format
@@ -3080,9 +3075,9 @@ msgid "Applied autostash."
 msgstr "Pilha automática (autostash) aplicada."
 
 #: sequencer.c:1917
-#, fuzzy, c-format
+#, c-format
 msgid "cannot store %s"
-msgstr "não é possível abrir %s"
+msgstr "não é possível guardar %s"
 
 #: sequencer.c:1919 git-rebase.sh:172
 #, c-format
@@ -3096,34 +3091,32 @@ msgstr ""
 "Pode executar \"git stash pop\" ou \"git stash drop\" oportunamente.\n"
 
 #: sequencer.c:2000
-#, fuzzy, c-format
+#, c-format
 msgid "stopped at %s... %.*s"
-msgstr "Falha ao aplicar o patch em %s %.*s"
+msgstr "parado a %s... %.*s"
 
 #: sequencer.c:2027
-#, fuzzy, c-format
+#, c-format
 msgid "unknown command %d"
-msgstr "subcomando desconhecido: %s"
+msgstr "comando desconhecido %d"
 
 #: sequencer.c:2057
-#, fuzzy
 msgid "could not read orig-head"
-msgstr "Não foi possível ler a referência %s"
+msgstr "não foi possível ler orig-head"
 
 #: sequencer.c:2061
-#, fuzzy
 msgid "could not read 'onto'"
-msgstr "não foi possível ler '%s'"
+msgstr "não foi possível ler 'onto'"
 
 #: sequencer.c:2068
-#, fuzzy, c-format
+#, c-format
 msgid "could not update %s"
-msgstr "não foi possível analisar %s"
+msgstr "não foi possível atualizar %s"
 
 #: sequencer.c:2075
-#, fuzzy, c-format
+#, c-format
 msgid "could not update HEAD to %s"
-msgstr "não foi possível escrever para %s"
+msgstr "não foi possível atualizar HEAD para %s"
 
 #: sequencer.c:2159
 msgid "cannot rebase: You have unstaged changes."
@@ -10805,7 +10798,7 @@ msgstr "empacotar objetos soltos inalcançáveis"
 
 #: builtin/pack-objects.c:2837
 msgid "unpack unreachable objects newer than <time>"
-msgstr "descompactar objetos inalcançáveis mais recentes que <hora>"
+msgstr "descompactar objetos inalcançáveis mais recentes que <tempo>"
 
 #: builtin/pack-objects.c:2840
 msgid "create thin packs"
@@ -10863,7 +10856,7 @@ msgstr "A remover objetos duplicados"
 
 #: builtin/prune.c:11
 msgid "git prune [-n] [-v] [--expire <time>] [--] [<head>...]"
-msgstr "git prune [-n] [-v] [--expire <hora>] [--] [<head>...]"
+msgstr "git prune [-n] [-v] [--expire <tempo>] [--] [<head>...]"
 
 #: builtin/prune.c:106
 msgid "report pruned objects"
@@ -10871,7 +10864,7 @@ msgstr "apresentar objetos eliminados"
 
 #: builtin/prune.c:109
 msgid "expire objects older than <time>"
-msgstr "expirar objetos mais antigos que <hora>"
+msgstr "expirar objetos mais antigos que <tempo>"
 
 #: builtin/prune.c:123
 msgid "cannot prune in a precious-objects repo"
@@ -13569,14 +13562,12 @@ msgstr ""
 "inexistente"
 
 #: builtin/worktree.c:128
-#, fuzzy
 msgid "report pruned working trees"
-msgstr "reportar notas podadas"
+msgstr "reportar árvores de trabalho podadas"
 
 #: builtin/worktree.c:130
-#, fuzzy
 msgid "expire working trees older than <time>"
-msgstr "expirar objetos mais antigos que <hora>"
+msgstr "expirar árvores de trabalho mais antigos que <tempo>"
 
 #: builtin/worktree.c:204
 #, c-format
@@ -15280,9 +15271,9 @@ msgstr ""
 "abortada e o exceto é deixado inalterado.\n"
 
 #: git-add--interactive.perl:1096
-#, fuzzy, perl-format
+#, perl-format
 msgid "failed to open hunk edit file for reading: %s"
-msgstr "não foi possível abrir '%s' para leitura: %s"
+msgstr "não foi possível abrir o ficheiro de edição do excerto para leitura: %s"
 
 #. TRANSLATORS: do not translate [y/n]
 #. The program will only accept that input
@@ -15294,6 +15285,8 @@ msgstr "não foi possível abrir '%s' para leitura: %s"
 msgid ""
 "Your edited hunk does not apply. Edit again (saying \"no\" discards!) [y/n]? "
 msgstr ""
+"O excerto que editou não aplica.\n"
+"Edite de novo (responder \"não\" descarta!) [y/n]? "
 
 #: git-add--interactive.perl:1196
 msgid ""
@@ -15303,6 +15296,11 @@ msgid ""
 "a - stage this hunk and all later hunks in the file\n"
 "d - do not stage this hunk or any of the later hunks in the file"
 msgstr ""
+"y - preparar este excerto\n"
+"n - não preparar este excerto\n"
+"q - sair; não preparar este excerto nem os restantes\n"
+"a - preparar este excerto e todos os seguintes no ficheiro\n"
+"d - não preparar este excerto ou outros seguintes no ficheiro"
 
 #: git-add--interactive.perl:1202
 msgid ""
@@ -15312,6 +15310,11 @@ msgid ""
 "a - stash this hunk and all later hunks in the file\n"
 "d - do not stash this hunk or any of the later hunks in the file"
 msgstr ""
+"y - esconder este excerto\n"
+"n - não esconder este excerto\n"
+"q - sair; não esconder este excerto nem os restantes\n"
+"a - esconder este excerto e todos os seguintes no ficheiro\n"
+"d - não esconder este excerto ou outros seguintes no ficheiro"
 
 #: git-add--interactive.perl:1208
 msgid ""
@@ -15330,6 +15333,11 @@ msgid ""
 "a - apply this hunk and all later hunks in the file\n"
 "d - do not apply this hunk or any of the later hunks in the file"
 msgstr ""
+"y - aplicar este excerto ao índice\n"
+"n - não aplicar este excerto ao índice\n"
+"q - sair; não aplicar este excerto nem nenhum dos restantes\n"
+"a - aplicar este excerto e todos os excertos seguintes no ficheiro\n"
+"d - não aplicar este excerto nem os excertos seguintes no ficheiro"
 
 #: git-add--interactive.perl:1220
 msgid ""
@@ -15339,6 +15347,11 @@ msgid ""
 "a - discard this hunk and all later hunks in the file\n"
 "d - do not discard this hunk or any of the later hunks in the file"
 msgstr ""
+"y - descartar este excerto da árvore de trabalho\n"
+"n - não descartar este excerto da árvore de trabalho\n"
+"q - sair; não descartar este excerto nem nenhum dos restantes\n"
+"a - descartar este excerto e todos os seguintes no ficheiro\n"
+"d - não descartar este excerto ou nenhum dos seguintes no ficheiro"
 
 #: git-add--interactive.perl:1226
 msgid ""
@@ -15348,6 +15361,11 @@ msgid ""
 "a - discard this hunk and all later hunks in the file\n"
 "d - do not discard this hunk or any of the later hunks in the file"
 msgstr ""
+"y - descartar este excerto do índice e da árvore de trabalho\n"
+"n - não descartar este excerto do índice nem da árvore de trabalho\n"
+"q - sair; não descartar este excerto nem nenhum dos restantes\n"
+"a - descartar este excerto e todos os excertos seguintes no ficheiro\n"
+"d - não descartar este excerto nem nenhum dos seguintes no ficheiro"
 
 #: git-add--interactive.perl:1232
 msgid ""
@@ -15372,38 +15390,33 @@ msgid ""
 msgstr ""
 
 #: git-add--interactive.perl:1272
-#, fuzzy
 msgid "The selected hunks do not apply to the index!\n"
-msgstr "adicionar o elemento especificado ao índice"
+msgstr "Os excertos selecionados não aplicam ao índice!\n"
 
 #: git-add--interactive.perl:1273
-#, fuzzy
 msgid "Apply them to the worktree anyway? "
-msgstr "caminho para a árvore de trabalho"
+msgstr "Aplicá-los à árvore de trabalho mesmo assim? "
 
 #: git-add--interactive.perl:1276
 msgid "Nothing was applied.\n"
-msgstr ""
+msgstr "Não foi aplicado nada.\n"
 
 #: git-add--interactive.perl:1287
-#, fuzzy, perl-format
+#, perl-format
 msgid "ignoring unmerged: %s\n"
-msgstr "A adicionar %s integrado"
+msgstr "ignorado não integrado: %s"
 
 #: git-add--interactive.perl:1296
-#, fuzzy
 msgid "Only binary files changed.\n"
-msgstr " 0 ficheros modificados\n"
+msgstr "Apenas ficheiros binários alterados.\n"
 
 #: git-add--interactive.perl:1298
-#, fuzzy
 msgid "No changes.\n"
-msgstr "Sem alterações"
+msgstr "Sem alterações.\n"
 
 #: git-add--interactive.perl:1306
-#, fuzzy
 msgid "Patch update"
-msgstr "[tag atualizada]"
+msgstr "Atualizar patch"
 
 #: git-add--interactive.perl:1358
 #, perl-format
