@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2017-02-18 01:00+0800\n"
-"PO-Revision-Date: 2017-02-23 10:39-0100\n"
+"PO-Revision-Date: 2017-02-23 13:07-0100\n"
 "Last-Translator: Vasco Almeida <vascomalmeida@sapo.pt>\n"
 "Language-Team: Portuguese\n"
 "Language: pt\n"
@@ -2820,9 +2820,8 @@ msgid "could not read HEAD"
 msgstr "não foi possível ler HEAD"
 
 #: sequencer.c:840
-#, fuzzy
 msgid "could not read HEAD's commit message"
-msgstr "não foi possível ler a mensagem de commit: %s"
+msgstr "não foi possível ler a mensagem de commit de HEAD"
 
 #: sequencer.c:846
 #, c-format
@@ -3059,7 +3058,7 @@ msgid ""
 "  git rebase --continue\n"
 "\n"
 msgstr ""
-"Executado com sucesso: $rest\n"
+"Executado com sucesso: %s\n"
 "mas deixou alterações no índice e/ou na árvore de trabalho\n"
 "Submeta ou esconda as alterações e execute\n"
 "\n"
@@ -15349,6 +15348,15 @@ msgid ""
 "e - manually edit the current hunk\n"
 "? - print help\n"
 msgstr ""
+"g - selecionar um excerto para ir\n"
+"/ - procurar por um excerto correspondendo à regex dada\n"
+"j - deixar este excerto indecidido, ver excerto seguinte indecidido\n"
+"J - deixar este excerto indecidido, ver excerto seguinte\n"
+"k - deixar este excerto indecidido, ver excerto anterior indecidido\n"
+"K - deixar este excerto indecidido, ver excerto anterior\n"
+"s - dividir o excerto atual em excertos mais pequenos\n"
+"e - editar manualmente o excerto atual\n"
+"? - imprimir ajuda\n"
 
 #: git-add--interactive.perl:1272
 msgid "The selected hunks do not apply to the index!\n"
@@ -15365,7 +15373,7 @@ msgstr "Não foi aplicado nada.\n"
 #: git-add--interactive.perl:1287
 #, perl-format
 msgid "ignoring unmerged: %s\n"
-msgstr "ignorado não integrado: %s"
+msgstr "ignorado não integrado: %s\n"
 
 #: git-add--interactive.perl:1296
 msgid "Only binary files changed.\n"
@@ -15382,32 +15390,32 @@ msgstr "Atualizar patch"
 #: git-add--interactive.perl:1358
 #, perl-format
 msgid "Stage mode change [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Preparar alteração de modo [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1359
 #, perl-format
 msgid "Stage deletion [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Preparar remoção [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1360
 #, perl-format
 msgid "Stage this hunk [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Preparar este excerto [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1363
 #, perl-format
 msgid "Stash mode change [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Esconder alteração de modo [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1364
 #, perl-format
 msgid "Stash deletion [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Esconder remoção [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1365
 #, perl-format
 msgid "Stash this hunk [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Esconder este excerto [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1368
 #, perl-format
@@ -15427,70 +15435,75 @@ msgstr ""
 #: git-add--interactive.perl:1373
 #, perl-format
 msgid "Apply mode change to index [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Aplicar alteração de modo ao índice [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1374
 #, perl-format
 msgid "Apply deletion to index [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Aplicar remoção ao índice [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1375
 #, perl-format
 msgid "Apply this hunk to index [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Aplicar este excerto ao índice [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1378
 #, perl-format
 msgid "Discard mode change from worktree [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Descartar alteração de modo da árvore de trabalho [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1379
 #, perl-format
 msgid "Discard deletion from worktree [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Descartar remoção da árvore de trabalho [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1380
 #, perl-format
 msgid "Discard this hunk from worktree [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Descartar este excerto da árvore de trabalho [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1383
 #, perl-format
 msgid "Discard mode change from index and worktree [y,n,q,a,d,/%s,?]? "
 msgstr ""
+"Descartar alteração de modo do índice e da árvore de trabalho [y,n,q,a,d,/"
+"%s,?]? "
 
 #: git-add--interactive.perl:1384
 #, perl-format
 msgid "Discard deletion from index and worktree [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Descartar remoção do índice e da árvore de trabalho [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1385
 #, perl-format
 msgid "Discard this hunk from index and worktree [y,n,q,a,d,/%s,?]? "
 msgstr ""
+"Descartar este excerto do índice e da árvore de trabalho [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1388
 #, perl-format
 msgid "Apply mode change to index and worktree [y,n,q,a,d,/%s,?]? "
 msgstr ""
+"Aplicar alteração de modo ao índice e à árvore de trabalho [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1389
 #, perl-format
 msgid "Apply deletion to index and worktree [y,n,q,a,d,/%s,?]? "
-msgstr ""
+msgstr "Aplicar remoção ao índice e à árvore de trabalho [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1390
 #, perl-format
 msgid "Apply this hunk to index and worktree [y,n,q,a,d,/%s,?]? "
 msgstr ""
+"Aplicar este excerto ao índice e à árvore de trabalho [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1493
 msgid "go to which hunk (<ret> to see more)? "
-msgstr ""
+msgstr "ir para que excerto (<ret> para ver mais)? "
 
 #: git-add--interactive.perl:1495
 msgid "go to which hunk? "
-msgstr ""
+msgstr "ir para que excerto? "
 
 #: git-add--interactive.perl:1504
 #, perl-format
@@ -15501,45 +15514,45 @@ msgstr "Número inválido: '%s'\n"
 #, perl-format
 msgid "Sorry, only %d hunk available.\n"
 msgid_plural "Sorry, only %d hunks available.\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Lamento, apenas %d excerto disponível.\n"
+msgstr[1] "Lamento, apenas %d excertos disponíveis.\n"
 
 #: git-add--interactive.perl:1535
 msgid "search for regex? "
-msgstr ""
+msgstr "procurar por regex? "
 
 #: git-add--interactive.perl:1548
 #, perl-format
 msgid "Malformed search regexp %s: %s\n"
-msgstr ""
+msgstr "Regexp de pesquisa malformada %s: %s\n"
 
 #: git-add--interactive.perl:1558
-#, fuzzy
 msgid "No hunk matches the given pattern\n"
-msgstr "aplicar alterações que correspondam ao caminho fornecido"
+msgstr "Nenhum excerto corresponde ao padrão fornecido\n"
 
 #: git-add--interactive.perl:1570 git-add--interactive.perl:1592
 msgid "No previous hunk\n"
-msgstr ""
+msgstr "Nenhum excerto anterior\n"
 
 #: git-add--interactive.perl:1579 git-add--interactive.perl:1598
 msgid "No next hunk\n"
-msgstr ""
+msgstr "Nenhum excerto seguinte\n"
 
 #: git-add--interactive.perl:1606
 #, perl-format
 msgid "Split into %d hunk.\n"
 msgid_plural "Split into %d hunks.\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Dividir em %d excerto.\n"
+msgstr[1] "Dividir em %d excertos.\n"
 
 #: git-add--interactive.perl:1658
 msgid "Review diff"
-msgstr ""
+msgstr "Rever diff"
 
 #. TRANSLATORS: please do not translate the command names
 #. 'status', 'update', 'revert', etc.
 #: git-add--interactive.perl:1677
+#, fuzzy
 msgid ""
 "status        - show paths with changes\n"
 "update        - add working tree state to the staged set of changes\n"
@@ -15548,17 +15561,23 @@ msgid ""
 "diff\t      - view diff between HEAD and index\n"
 "add untracked - add contents of untracked files to the staged set of changes\n"
 msgstr ""
+"status        - mostrar caminhos com alterações\n"
+"update        - add working tree state to the staged set of changes\n"
+"revert        - revert staged set of changes back to the HEAD version\n"
+"patch         - escolher excertos e atualizar seletivamente\n"
+"diff          - ver diff entre HEAD e índice\n"
+"add untracked - add contents of untracked files to the staged set of changes\n"
 
 #: git-add--interactive.perl:1694 git-add--interactive.perl:1699
 #: git-add--interactive.perl:1702 git-add--interactive.perl:1709
 #: git-add--interactive.perl:1713 git-add--interactive.perl:1719
 msgid "missing --"
-msgstr ""
+msgstr "falta --"
 
 #: git-add--interactive.perl:1715
-#, fuzzy, perl-format
+#, perl-format
 msgid "unknown --patch mode: %s"
-msgstr "-s/--strategy desconhecida: %s"
+msgstr "Mode de --patch desconhecido: %s"
 
 #: git-add--interactive.perl:1721 git-add--interactive.perl:1727
 #, fuzzy, perl-format
@@ -15575,7 +15594,7 @@ msgstr ""
 
 #: git-send-email.perl:202 git-send-email.perl:208
 msgid "the editor exited uncleanly, aborting everything"
-msgstr ""
+msgstr "o editor saiu com erros, abortar tudo"
 
 #: git-send-email.perl:282
 #, perl-format
@@ -15585,7 +15604,7 @@ msgstr ""
 #: git-send-email.perl:287
 #, perl-format
 msgid "'%s.final' contains the composed email.\n"
-msgstr ""
+msgstr "'%s.final' contém o e-mail composto.\n"
 
 #: git-send-email.perl:305
 #, fuzzy
@@ -15600,7 +15619,7 @@ msgstr "--cached fora de um repositório"
 #: git-send-email.perl:437
 #, perl-format
 msgid "Unknown --suppress-cc field: '%s'\n"
-msgstr ""
+msgstr "Campo de --suppress-cc desconhecido: '%s'\n"
 
 #: git-send-email.perl:466
 #, fuzzy, perl-format
@@ -15610,22 +15629,22 @@ msgstr "Commit desconhecido %s"
 #: git-send-email.perl:498
 #, perl-format
 msgid "warning: sendmail alias with quotes is not supported: %s\n"
-msgstr ""
+msgstr "aviso: sendmail alias com aspas não é suportado: %s\n"
 
 #: git-send-email.perl:500
 #, perl-format
 msgid "warning: `:include:` not supported: %s\n"
-msgstr ""
+msgstr "aviso: `:include:` não suportado: %s\n"
 
 #: git-send-email.perl:502
 #, perl-format
 msgid "warning: `/file` or `|pipe` redirection not supported: %s\n"
-msgstr ""
+msgstr "aviso: `/file` ou redireção `|pipe` não suportado: %s\n"
 
 #: git-send-email.perl:507
 #, perl-format
 msgid "warning: sendmail line is not recognized: %s\n"
-msgstr ""
+msgstr "aviso: linha sendmail não é reconhecida: %s\n"
 
 #: git-send-email.perl:589
 #, perl-format
@@ -15636,6 +15655,11 @@ msgid ""
 "    * Saying \"./%s\" if you mean a file; or\n"
 "    * Giving --format-patch option if you mean a range.\n"
 msgstr ""
+"O ficheiro '%s' existe mas também pode ser um intervalo de commits\n"
+"para os quais produzir patches.  Por favor desambigue...\n"
+"\n"
+"    * Dizendo \"./%s\" se pretende um ficheiro; ou\n"
+"    * Passando a opção --format-patch se pretende um intervalo de commits.\n"
 
 #: git-send-email.perl:610
 #, fuzzy, perl-format
@@ -15648,6 +15672,8 @@ msgid ""
 "fatal: %s: %s\n"
 "warning: no patches were sent\n"
 msgstr ""
+"fatal: %s: %s\n"
+"aviso: nenhum patch foi enviado\n"
 
 #: git-send-email.perl:645
 #, fuzzy
@@ -15675,6 +15701,11 @@ msgid ""
 "\n"
 "Clear the body content if you don't wish to send a summary.\n"
 msgstr ""
+"Linhas começadas com \"GIT:\" serão removidos.\n"
+"Considere incluir um diffstat geral ou tabela de conteúdos\n"
+"do patch que está a escrever.\n"
+"\n"
+"Apague o conteúdo do corpo se não deseja enviar um sumário.\n"
 
 #: git-send-email.perl:701
 #, fuzzy, perl-format
@@ -15688,27 +15719,30 @@ msgstr "falha ao abrir '%s': %s"
 
 #: git-send-email.perl:739
 msgid "To/Cc/Bcc fields are not interpreted yet, they have been ignored\n"
-msgstr ""
+msgstr "Os campos To/Cc/Bcc não são interpretados ainda, foram ignorados\n"
 
 #: git-send-email.perl:748
+#, fuzzy
 msgid "Summary email is empty, skipping it\n"
-msgstr ""
+msgstr "E-mail de sumário está vazio, saltá-lo à frente\n"
 
 #. TRANSLATORS: please keep [y/N] as is.
 #: git-send-email.perl:780
 #, perl-format
 msgid "Are you sure you want to use <%s> [y/N]? "
-msgstr ""
+msgstr "Tem a certeza que quer usar <%s> [y/N]? "
 
 #: git-send-email.perl:809
 msgid ""
 "The following files are 8bit, but do not declare a Content-Transfer-"
 "Encoding.\n"
 msgstr ""
+"Os seguintes ficheiros são 8bit, mas não declaram um Content-Transfer-"
+"Encoding.\n"
 
 #: git-send-email.perl:814
 msgid "Which 8bit encoding should I declare [UTF-8]? "
-msgstr ""
+msgstr "Que codificação 8bit se deve declarar [UTF-8]? "
 
 #: git-send-email.perl:822
 #, perl-format
@@ -15718,31 +15752,36 @@ msgid ""
 "has the template subject '*** SUBJECT HERE ***'. Pass --force if you really "
 "want to send.\n"
 msgstr ""
+"Recusar envio porque o patch\n"
+"\t%s\n"
+"tem o assunto modelo '*** SUBJECT HERE ***'. Passe --force se pretende mesmo "
+"enviar.\n"
 
 #: git-send-email.perl:841
 msgid "To whom should the emails be sent (if anyone)?"
-msgstr ""
+msgstr "Para quem devem ser enviados os e-mails (se alguém)?"
 
 #: git-send-email.perl:859
 #, perl-format
 msgid "fatal: alias '%s' expands to itself\n"
-msgstr ""
+msgstr "fatal: alias '%s' expande para si próprio\n"
 
 #: git-send-email.perl:871
 msgid "Message-ID to be used as In-Reply-To for the first email (if any)? "
 msgstr ""
+"Message-ID para ser usado como In-Reply-To para o primeiro e-mail (se algum)? "
 
 #: git-send-email.perl:921 git-send-email.perl:929
 #, perl-format
 msgid "error: unable to extract a valid address from: %s\n"
-msgstr ""
+msgstr "erro: não é possível extrair um endereço válido de: %s\n"
 
 #. TRANSLATORS: Make sure to include [q] [d] [e] in your
 #. translation. The program will only accept English input
 #. at this point.
 #: git-send-email.perl:933
 msgid "What to do with this address? ([q]uit|[d]rop|[e]dit): "
-msgstr ""
+msgstr "O que fazer com este endereço? ([q]uit|[d]rop|[e]dit): "
 
 #: git-send-email.perl:1234
 #, fuzzy, perl-format
@@ -15762,21 +15801,31 @@ msgid ""
 "    run 'git config --global sendemail.confirm auto'.\n"
 "\n"
 msgstr ""
+"    A lista de Cc acima foi expandida com endereços\n"
+"    adicionais encontrados na mensagem de commit do patch.\n"
+"    Por omissão send-email pergunta antes de enviar quando\n"
+"    isto ocorre. Este comportamento é controlado pela definição\n"
+"    de configuração sendemail.confirm.\n"
+"\n"
+"    Para informação adicional, execute 'git send-email --help'.\n"
+"    Para reter o comportamento atual, mas suprimir esta mensagem,\n"
+"    execute 'git config --global sendemail.confirm auto'.\n"
+"\n"
 
 #. TRANSLATORS: Make sure to include [y] [n] [q] [a] in your
 #. translation. The program will only accept English input
 #. at this point.
 #: git-send-email.perl:1324
 msgid "Send this email? ([y]es|[n]o|[q]uit|[a]ll): "
-msgstr ""
+msgstr "Enviar este e-mail? ([y]es|[n]o|[q]uit|[a]ll): "
 
 #: git-send-email.perl:1327
 msgid "Send this email reply required"
-msgstr ""
+msgstr "É necessária resposta se deseja enviar este e-mail"
 
 #: git-send-email.perl:1353
 msgid "The required SMTP server is not properly defined."
-msgstr ""
+msgstr "O servidor SMTP necessário não está definido corretamente."
 
 #: git-send-email.perl:1397
 #, fuzzy, perl-format
@@ -15786,6 +15835,8 @@ msgstr "O servidor não suporta --deepen"
 #: git-send-email.perl:1403
 msgid "Unable to initialize SMTP properly. Check config and use --smtp-debug."
 msgstr ""
+"Não é possível inicializar SMTP devidamente. Verifique a configuração e use --"
+"smtp-debug."
 
 #: git-send-email.perl:1421
 #, fuzzy, perl-format
@@ -15808,15 +15859,15 @@ msgstr ""
 
 #: git-send-email.perl:1426
 msgid "OK. Log says:\n"
-msgstr ""
+msgstr "OK. O registo diz:\n"
 
 #: git-send-email.perl:1438
 msgid "Result: "
-msgstr ""
+msgstr "Resultado: "
 
 #: git-send-email.perl:1441
 msgid "Result: OK\n"
-msgstr ""
+msgstr "Resultado: OK\n"
 
 #: git-send-email.perl:1454
 #, fuzzy, perl-format
@@ -15826,22 +15877,22 @@ msgstr "não é possível abrir o ficheiro '%s'"
 #: git-send-email.perl:1501 git-send-email.perl:1521
 #, perl-format
 msgid "(mbox) Adding cc: %s from line '%s'\n"
-msgstr ""
+msgstr "(mbox) Adicionar cc: %s da linha '%s'\n"
 
 #: git-send-email.perl:1507
 #, perl-format
 msgid "(mbox) Adding to: %s from line '%s'\n"
-msgstr ""
+msgstr "(mbox) Adicionar para: %s da linha '%s'\n"
 
 #: git-send-email.perl:1555
 #, perl-format
 msgid "(non-mbox) Adding cc: %s from line '%s'\n"
-msgstr ""
+msgstr "(non-mbox) Adicionar cc: %s da linha '%s'\n"
 
 #: git-send-email.perl:1578
 #, perl-format
 msgid "(body) Adding cc: %s from line '%s'\n"
-msgstr ""
+msgstr "(body) Adicionar cc: %s da linha '%s'\n"
 
 #: git-send-email.perl:1676
 #, fuzzy, perl-format
@@ -15851,7 +15902,7 @@ msgstr "Não foi possível eliminar %s"
 #: git-send-email.perl:1683
 #, perl-format
 msgid "(%s) Adding %s: %s from: '%s'\n"
-msgstr ""
+msgstr "(%s) Adicionar %s: %s de: '%s'\n"
 
 #: git-send-email.perl:1687
 #, fuzzy, perl-format
@@ -15876,18 +15927,18 @@ msgstr "não foi possível abrir %s"
 #: git-send-email.perl:1744
 #, perl-format
 msgid "%s: patch contains a line longer than 998 characters"
-msgstr ""
+msgstr "%s: o patch contem uma linha mais longa que 998 carateres"
 
 #: git-send-email.perl:1760
 #, perl-format
 msgid "Skipping %s with backup suffix '%s'.\n"
-msgstr ""
+msgstr "Saltar %s com sufixo de backup '%s'.\n"
 
 #. TRANSLATORS: please keep "[y|N]" as is.
 #: git-send-email.perl:1764
 #, perl-format
 msgid "Do you really want to send %s? [y|N]: "
-msgstr ""
+msgstr "Deseja mesmo enviar %s? [y|N]: "
 
 #~ msgid "Use an experimental blank-line-based heuristic to improve diffs"
 #~ msgstr ""
