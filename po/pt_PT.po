@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2017-02-18 01:00+0800\n"
-"PO-Revision-Date: 2017-02-23 16:01-0100\n"
+"PO-Revision-Date: 2017-02-23 16:05-0100\n"
 "Last-Translator: Vasco Almeida <vascomalmeida@sapo.pt>\n"
 "Language-Team: Portuguese\n"
 "Language: pt\n"
@@ -14454,7 +14454,7 @@ msgid ""
 "Submodule work tree '$displaypath' contains a .git directory\n"
 "(use 'rm -rf' if you really want to remove it including all of its history)"
 msgstr ""
-"A árvore de trabalho do submódulo '$displaypath' contem um diretório .git\n"
+"A árvore de trabalho do submódulo '$displaypath' contém um diretório .git\n"
 "(use 'rm -rf' se pretende mesmo removê-lo, incluindo todo o seu histórico)"
 
 #: git-submodule.sh:451
@@ -15405,7 +15405,7 @@ msgstr "Preparar alteração de modo [y,n,q,a,d,/%s,?]? "
 #: git-add--interactive.perl:1359
 #, perl-format
 msgid "Stage deletion [y,n,q,a,d,/%s,?]? "
-msgstr "Preparar remoção [y,n,q,a,d,/%s,?]? "
+msgstr "Preparar eliminação [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1360
 #, perl-format
@@ -15420,7 +15420,7 @@ msgstr "Esconder alteração de modo [y,n,q,a,d,/%s,?]? "
 #: git-add--interactive.perl:1364
 #, perl-format
 msgid "Stash deletion [y,n,q,a,d,/%s,?]? "
-msgstr "Esconder remoção [y,n,q,a,d,/%s,?]? "
+msgstr "Esconder eliminação [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1365
 #, perl-format
@@ -15435,7 +15435,7 @@ msgstr "Não preparar alteração de modo [y,n,q,a,d,/%s,?]? "
 #: git-add--interactive.perl:1369
 #, perl-format
 msgid "Unstage deletion [y,n,q,a,d,/%s,?]? "
-msgstr "Não preparar remoção [y,n,q,a,d,/%s,?]? "
+msgstr "Não preparar eliminação [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1370
 #, perl-format
@@ -15450,7 +15450,7 @@ msgstr "Aplicar alteração de modo ao índice [y,n,q,a,d,/%s,?]? "
 #: git-add--interactive.perl:1374
 #, perl-format
 msgid "Apply deletion to index [y,n,q,a,d,/%s,?]? "
-msgstr "Aplicar remoção ao índice [y,n,q,a,d,/%s,?]? "
+msgstr "Aplicar eliminação ao índice [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1375
 #, perl-format
@@ -15465,7 +15465,7 @@ msgstr "Descartar alteração de modo da árvore de trabalho [y,n,q,a,d,/%s,?]? 
 #: git-add--interactive.perl:1379
 #, perl-format
 msgid "Discard deletion from worktree [y,n,q,a,d,/%s,?]? "
-msgstr "Descartar remoção da árvore de trabalho [y,n,q,a,d,/%s,?]? "
+msgstr "Descartar eliminação da árvore de trabalho [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1380
 #, perl-format
@@ -15482,7 +15482,8 @@ msgstr ""
 #: git-add--interactive.perl:1384
 #, perl-format
 msgid "Discard deletion from index and worktree [y,n,q,a,d,/%s,?]? "
-msgstr "Descartar remoção do índice e da árvore de trabalho [y,n,q,a,d,/%s,?]? "
+msgstr ""
+"Descartar eliminação do índice e da árvore de trabalho [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1385
 #, perl-format
@@ -15499,7 +15500,7 @@ msgstr ""
 #: git-add--interactive.perl:1389
 #, perl-format
 msgid "Apply deletion to index and worktree [y,n,q,a,d,/%s,?]? "
-msgstr "Aplicar remoção ao índice e à árvore de trabalho [y,n,q,a,d,/%s,?]? "
+msgstr "Aplicar eliminação ao índice e à árvore de trabalho [y,n,q,a,d,/%s,?]? "
 
 #: git-add--interactive.perl:1390
 #, perl-format
@@ -15936,7 +15937,7 @@ msgstr "não é possível abrir %s: %s\n"
 #: git-send-email.perl:1744
 #, perl-format
 msgid "%s: patch contains a line longer than 998 characters"
-msgstr "%s: o patch contem uma linha mais longa que 998 carateres"
+msgstr "%s: o patch contém uma linha mais longa que 998 carateres"
 
 #: git-send-email.perl:1760
 #, perl-format
